@@ -1,3 +1,4 @@
+import Footer from "../ui/dashboard/footer/footer";
 import Navbar from "../ui/dashboard/navbar/page";
 import Sidebar from "../ui/dashboard/sidebar/page";
 import styles from "@/app/ui/dashboard/dashboard.module.css"
@@ -13,6 +14,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
             <div className={styles.content}>
                 <Navbar />
                 {children}
+                <Footer />
             </div>
         </div>
     )
